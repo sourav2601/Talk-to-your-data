@@ -1,20 +1,65 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 📊 Talk to Your Data
 
-# Run and deploy your AI Studio app
+> Query any dataset in plain English. No SQL needed.
 
-This contains everything you need to run your app locally.
+🔗 **[Live Demo](https://talk-to-your-data-465x.onrender.com)**
 
-View your app in AI Studio: https://ai.studio/apps/6bd5be05-932a-45be-bc85-004d2dfcd162
+---
 
-## Run Locally
+## What it does
 
-**Prerequisites:**  Node.js
+Upload any CSV or Excel file and ask questions in plain English:
 
+- *"Which region had the highest revenue?"*
+- *"Show monthly sales trend for 2024"*
+- *"Compare 2023 vs 2024 by region"*
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The app generates SQL, runs it, and returns an answer + chart instantly.
+
+---
+
+## Features
+
+- Natural language to SQL using Gemini API
+- Auto chart selection (bar, line, pie, scatter)
+- Self-correcting SQL (retries up to 3 times on failure)
+- Conversation memory for follow-up questions
+- Works on any CSV or Excel dataset
+
+---
+
+## Tech Stack
+
+| Layer | Tech |
+|---|---|
+| Frontend | React + TypeScript |
+| Backend | Node.js + Express |
+| LLM | Google Gemini API |
+| SQL Engine | AlaSQL (in-memory) |
+| Deployment | Render |
+
+---
+
+## Local Setup
+
+```bash
+git clone https://github.com/sourav2601/Talk-to-your-data.git
+cd Talk-to-your-data/talk-to-your-data
+npm install
+```
+
+Create `.env` file:
+```
+GEMINI_API_KEY=your_key_here
+```
+
+```bash
+npm run dev
+```
+
+---
+
+## Author
+
+**Sourav Prasad** — B.Tech CSE, KIIT University (2026)
+📧 souravprasad2004@gmail.com | [GitHub](https://github.com/sourav2601)
