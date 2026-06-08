@@ -2,8 +2,6 @@
 
 > Query any dataset in plain English. No SQL needed.
 
-🔗 **[Live Demo](https://talk-to-your-data-465x.onrender.com)**
-
 ---
 
 ## What it does
